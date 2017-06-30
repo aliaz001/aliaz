@@ -16,16 +16,16 @@
 cd $HOME
 git clone https://github.com/aliaz001/aliaz.git
 cd aliaz
-chmod +x auto.sh
-./fire1.sh install
-./fire1.sh
+chmod +x energy.sh
+./energy.sh install
+./energy.sh
 
  # Enter a phone number & confirmation code.
 ```
 ### `نصب ربات`
 *روش دوم کد یک پارچه*
 ```sh
-cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x auto.sh && ./fire1.sh install && ./fire1.sh 
+cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x energy.sh && ./energy.sh install && ./energy.sh
 ```
 
 * * *
