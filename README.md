@@ -14,8 +14,8 @@
 *روش اول*
 ```sh
 cd $HOME
-git clone https://github.com/aliazaliaz/fire1.git
-cd fire1
+git clone https://github.com/aliaz001/aliaz.git
+cd aliaz
 chmod +x fire1.sh
 ./fire1.sh install
 ./fire1.sh
@@ -25,7 +25,7 @@ chmod +x fire1.sh
 ### `نصب ربات`
 *روش دوم کد یک پارچه*
 ```sh
-cd $HOME && git clone https://github.com/aliazaliaz/fire1.git && cd fire1 && chmod +x fire1.sh && ./fire1.sh install && ./fire1.sh 
+cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x fire1.sh && ./fire1.sh install && ./fire1.sh 
 ```
 
 * * *
