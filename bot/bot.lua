@@ -76,7 +76,7 @@ function create_config( )
     info_text = [[fire v2
 
 
-》https://github.com/aliaz001/aliaz
+》
 
 》Admins :
 》@aliaz003 《

@@ -8,7 +8,7 @@ do local _ = {
     "plugins",
     "tools"
   },
-  info_text = "fire v2\n\n\n》https://github.com/aliaz001/aliaz\n\n》Admins :\n》@aliaz003 《\n\9\9\n\n",
+  info_text = "fire v2\n\n\n》\n\n》Admins :\n》@aliaz003 《\n\9\9\n\n",
   moderation = {
     data = "./data/moderation.json"
   },
