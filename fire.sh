@@ -4,7 +4,7 @@ aliaz=$(cd $(dirname $0); pwd)
 cd $aliaz
 
 install() {
-	    cd tg
+	    cd libs
 		sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 		sudo apt-get install g++-4.7 -y c++-4.7 -y
 		sudo apt-get update
