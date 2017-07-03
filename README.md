@@ -23,8 +23,8 @@
 cd $HOME
 git clone https://github.com/aliaz001/aliaz.git
 cd aliaz
-chmod +x fire.sh
-./fire.sh install
+chmod +x autofire.sh
+./autofire.sh install
 ./fire.sh 
 # Enter a phone number & confirmation code.
 
@@ -36,11 +36,11 @@ screen ./autofire.sh
 ### One command
 To install everything in one command, use:
 ```sh
-cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x fire.sh && ./fire.sh install && ./fire.sh
+cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x autofire.sh && ./autofire.sh install && ./fire.sh
 
 OR
 
-cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x fire.sh && ./fire.sh install && chmod 777 autofire.sh && screen ./autofire.sh
+cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x autofire.sh && ./autofire.sh install && chmod 777 autofire.sh && screen ./autofire.sh
 ```
 
 * * *
