@@ -1,4 +1,4 @@
---Begin msg_checks.lua @aliaz003
+--Begin msg_checks.lua By @aliaz003
 local TIME_CHECK = 2
 local function pre_process(msg)
 local data = load_data(_config.moderation.data)
@@ -113,6 +113,11 @@ end
   else
     lock_tag = 'no'
   end
+   if settings.lock_hashtag then
+    lock_hashtag = settings.lock_hashtag
+  else
+    lock_hashtag = 'no'
+  end
   if settings.english then
     english = settings.english
   else
@@ -128,11 +133,7 @@ end
   else
     emoji = 'no'
   end
-      if settings.tab then
-    tab = settings.tab
-  else
-    tab = 'no'
-  end
+
   if settings.lock_pin then
     lock_pin = settings.lock_pin
   else
@@ -328,8 +329,16 @@ if english_caption and english == "yes" then
 kick_user(user, chat)
    end
 end
-local tag_caption = msg.media.caption:match("@") or msg.media.caption:match("#")
+local tag_caption = msg.media.caption:match("@") 
 if tag_caption and lock_tag == "yes" then
+ if is_channel then
+ del_msg(chat, tonumber(msg.id))
+  elseif is_chat then
+kick_user(user, chat)
+   end
+end
+local hashtag_caption = msg.media.caption:match("#") 
+if hashtag_caption and lock_hashtag == "yes" then
  if is_channel then
  del_msg(chat, tonumber(msg.id))
   elseif is_chat then
@@ -354,6 +363,7 @@ if ads_caption and ads == "yes" then
 kick_user(user, chat)
    end
 end
+
 local tab_caption = msg.media.caption:match("ادی")or msg.media.caption:match("[Aa]di")or msg.media.caption:match("[Aa]dd")or msg.media.caption:match("اددی")or msg.media.caption:match("[Aa]ddi")
 if tab_caption and tab == "yes" then
  if is_channel then
@@ -425,8 +435,16 @@ and lock_link == "yes" then
 kick_user(user, chat)
    end
 end
-local tag_msg = msg.text:match("@") or msg.text:match("#")
+local tag_msg = msg.text:match("@") 
 if tag_msg and lock_tag == "yes" then
+ if is_channel then
+ del_msg(chat, tonumber(msg.id))
+  elseif is_chat then
+kick_user(user, chat)
+   end
+end
+local hashtag_msg = msg.text:match("#") 
+if hashtag_msg and lock_hashtag == "yes" then
  if is_channel then
  del_msg(chat, tonumber(msg.id))
   elseif is_chat then
@@ -451,8 +469,8 @@ kick_user(user, chat)
    end
 end
 
-local tab_msg =msg.text:match("[aA]dd") or msg.text:match("ادی") or msg.text:match("[Aa]di")  or msg.text:match("اددی") or msg.text:match("[aA]d") or msg.text:match("[Aa]dii") or msg.text:match("اددی")
-if tab_msg and tab == "yes" then
+local ads_msg =msg.text:match("شارژ") or msg.text:match("چالش") or msg.text:match("عضو چنل شید")  or msg.text:match("ایرانسل") or msg.text:match("همراه اول") or msg.text:match("رایتل") or msg.text:match("جایزه نفر اول")  or msg.text:match("جایزه نفر دوم") or msg.text:match("جایزه نفر سوم") or msg.text:match("پیج اینستا")  or msg.text:match("instagram.com") or msg.text:match("www") or msg.text:match("t.me/") or msg.text:match("telegram.me/") or msg.text:match("چالش") or msg.text:match("کد شارژ")  or msg.text:match("شارژ رایگان")  or msg.text:match("پیج تلگرام")  or msg.text:match("کانال تلگرامی ما") or msg.text:match("جایزه جایزه") or msg.text:match("پخش کنید")  or msg.text:match("چالش داریم") or msg.text:match("تبلیغات") or msg.text:match("پذیرفتن تبلیغ")
+if ads_msg and ads == "yes" then
  if is_channel then
  del_msg(chat, tonumber(msg.id))
   elseif is_chat then
@@ -460,8 +478,8 @@ kick_user(user, chat)
    end
 end
 
-local ads_msg =msg.text:match("شارژ") or msg.text:match("چالش") or msg.text:match("عضو چنل شید")  or msg.text:match("ایرانسل") or msg.text:match("همراه اول") or msg.text:match("رایتل") or msg.text:match("جایزه نفر اول")  or msg.text:match("جایزه نفر دوم") or msg.text:match("جایزه نفر سوم") or msg.text:match("پیج اینستا")  or msg.text:match("instagram.com") or msg.text:match("www") or msg.text:match("t.me/") or msg.text:match("telegram.me/") or msg.text:match("چالش") or msg.text:match("کد شارژ")  or msg.text:match("شارژ رایگان")  or msg.text:match("پیج تلگرام")  or msg.text:match("کانال تلگرامی ما") or msg.text:match("جایزه جایزه") or msg.text:match("پخش کنید")  or msg.text:match("چالش داریم") or msg.text:match("تبلیغات") or msg.text:match("پذیرفتن تبلیغ")
-if ads_msg and ads == "yes" then
+local tab_msg =msg.text:match("[aA]dd") or msg.text:match("ادی") or msg.text:match("[Aa]di")  or msg.text:match("اددی") or msg.text:match("[aA]d") or msg.text:match("[Aa]dii") or msg.text:match("اددی")
+if tab_msg and tab == "yes" then
  if is_channel then
  del_msg(chat, tonumber(msg.id))
   elseif is_chat then

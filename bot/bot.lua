@@ -1,5 +1,5 @@
-
--- #@fire021tm
+-- #fire021tm
+-- #@aliaz003
 
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
@@ -68,30 +68,19 @@ function create_config( )
 		"msg-checks",
 		"plugins",
 		"tools",
-		"fun",
-		"info",
-		"del",
-		"nerkh",
-		"pic",
-		"ping",
-		"time1",
-		"write",
-		"addkick"	
 	},
     sudo_users = {282470335},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》fire v.2
+    info_text = [[fire v2
 
 
-》https://github.com/aliazaliaz/fire1
+》https://github.com/aliaz001/aliaz
 
 》Admins :
 》@aliaz003 《
 		
-》Special thanks to :
-》@Samyar35 《
 
 ]],
   }

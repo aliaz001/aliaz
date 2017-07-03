@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-THIS_DIR=$(cd $(dirname $0); pwd)
-cd $THIS_DIR
+fire=$(cd $(dirname $0); pwd)
+cd $fire
 
 install() {
 	    cd tg
@@ -21,24 +21,24 @@ install() {
 		cd ..
 		chmod +x bot
 		chmod +x tg
-		chmod +x autoenergy.sh
+		chmod +x autobd.sh
 }
 
 function print_logo() {
-	green "         ENERGY  EHSAN    RICH         ENERGY"
-	green "         ENERGY  EHSAN    RICH         ENERGY"
-	green "         ENERGY  EHSAN    RICH         ENERGY"
-	green "         ENERGY  EHSAN    RICH         ENERGY"
+	green "          ____  ____     _____"
+	green "         |  _ )|  _ \   |_   _|___ ____   __  __"
+	green "         |  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
+	green "         |____/|____/     |_|\____/\_____|_/\/\_|"
 	echo -e "\n\e[0m"
 }
 
 function logo_play() {
     declare -A txtlogo
     seconds="0.010"
-    txtlogo[1]="ENERGY  EHSAN    RICH         ENERGY"
-    txtlogo[2]="ENERGY  EHSAN    RICH         ENERGY"
-    txtlogo[3]="ENERGY  EHSAN    RICH         ENERGY"
-    txtlogo[4]="ENERGY  EHSAN    RICH         ENERGY"
+    txtlogo[1]=" ____  ____     _____"
+    txtlogo[2]="|  _ )|  _ \   |_   _|___ ____   __  __"
+    txtlogo[3]="|  _ \| |_) )    | |/ .__|  _ \_|  \/  |"
+    txtlogo[4]="|____/|____/     |_|\____/\_____|_/\/\_|"
     printf "\e[31m\t"
     for i in ${!txtlogo[@]}; do
         for x in `seq 0 ${#txtlogo[$i]}`; do
@@ -51,14 +51,14 @@ function logo_play() {
 	echo -e "\e[0m"
 }
 
-function energy_team() {
+function beyondteam() {
 	echo -e "\e[0m"
-	green "     >>>>                       edir 4 source                                               "
-	green "     >>>>                       beyond.bombang and...                                       "
-	white "     >>>>                       edited by ehsan mafia_boy   @mafia_boy                      "
-	white "     >>>>                       @RICH_ENERGY                                                "
-	red   "     >>>>                       @ENERGY_TEAM                                                "
-	red   "     >>>>                       ENERGY_BOT                                                  "
+	green "     >>>>                       We Are Not Attacker                             "
+	green "     >>>>                       We Are Not Alliance                             "
+	white "     >>>>                       We Are Programmer                               "
+	white "     >>>>                       We Are The Best                                 "
+	red   "     >>>>                       We Are Family                                   "
+	red   "     >>>>                       @BeyondTeam                                     "
 	echo -e "\e[0m"
 }
 
@@ -77,7 +77,7 @@ update() {
 
 if [ "$1" = "install" ]; then
 	print_logo
-	energy_team
+	beyondteam
 	logo_play
 	install
   else
@@ -87,7 +87,7 @@ if [ ! -f ./tg/tgcli ]; then
     exit 1
  fi
 	print_logo
-	energy_team
+	beyondteam
 	logo_play
    #sudo service redis-server restart
    ./tg/tgcli -s ./bot/bot.lua -l 1 -E $@

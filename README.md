@@ -1,66 +1,58 @@
-# [fire1 v.2](https://telegram.me/fire021tm)
+# [fire V2.0](https://telegram.me/fire021tm)
 
-`سورسی کاملا فارسی در زمینه تیجی های جدید :)`
+**An advanced and powerful administration bot based on NEW TG-CLI
 
-* * *
-
-### دستورات
-
-*| راهنما | , ...*
 
 * * *
 
-#` نصب ربات`
-*روش اول*
+## Commands
+
+| Use help |
+|:--------|:------------|
+| [#!/]help | just send help in your group and get the commands |
+
+**You can use "#", "!", or "/" to begin all commands
+
+* * *
+
+# Installation
+
+
 ```sh
+# Let's install the bot.
 cd $HOME
 git clone https://github.com/aliaz001/aliaz.git
 cd aliaz
-chmod +x energy.sh
-./energy.sh install
-./energy.sh
+chmod +x fire.sh
+./fire.sh install
+./fire.sh 
+# Enter a phone number & confirmation code.
 
- # Enter a phone number & confirmation code.
+# For Auto Launch:
+cd aliaz
+chmod 777 autofire.sh
+screen ./autofire.sh
 ```
-### `نصب ربات`
-*روش دوم کد یک پارچه*
+### One command
+To install everything in one command, use:
 ```sh
-cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x energy.sh && ./energy.sh install && ./energy.sh
+cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x fire.sh && ./fire.sh install && ./fire.sh
+
+OR
+
+cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x fire.sh && ./fire.sh install && chmod 777 autofire.sh && screen ./autofire.sh
 ```
 
 * * *
 
-### `تایین سودو برای ربات`
- قرار بدین سپس کد لانچ را وارد کنید  `tools`  خط 2   `plugins` همچنین در پوشیه  `data` در پوشه `config` ایدی عددی خودتون رو پس از نصب در خط 33 
-```
-
-### `لانچ`
-```
-killall screen
-kiillall bash
-killall tgcli
-                                                                                                                                                                                                
-cd fire1
-chmod 777 auto.sh
-screen ./fire1.sh
-
-```
-* * *
 
 
-# [aliaz003](https://telegram.me/aliaz003)
+# Developers!
 
-
-Telegram channel:
-
-[fire021tm](https://telegram.me/fire021tm)
-
-thanks to   
-
-[Samyar35](https://telegram.me/Samyar35)
+[aliaz003](https://github.com/aliaz003) ([Telegram](https://telegram.me/aliaz))
 
 
 
-* * *
-》*Please send us your stars☆ at the top of this page*
+### Our Telegram channel:
 
+[@fire021tm](https://telegram.me/fire021tm)
