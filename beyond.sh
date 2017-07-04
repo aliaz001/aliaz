@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-aliaz=$(cd $(dirname $0); pwd)
-cd $aliaz
+THIS_DIR=$(cd $(dirname $0); pwd)
+cd $THIS_DIR
 
 install() {
 	    cd tg

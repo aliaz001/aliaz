@@ -25,25 +25,15 @@ git clone https://github.com/aliaz001/aliaz.git
 cd aliaz
 chmod +x beyond.sh
 ./beyond.sh install
-./beyond.sh 
+./beyond.sh  
 # Enter a phone number & confirmation code.
 
 # For Auto Launch:
 cd aliaz
-chmod 777 beyond.sh
-screen ./beyond.sh
-```
-### One command
-To install everything in one command, use:
-```sh
-cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x beyond.sh && ./beyond.sh install && ./beyond.sh
-
-OR
-
-cd $HOME && git clone https://github.com/aliaz001/aliaz.git && cd aliaz && chmod +x beyond.sh && ./beyond.sh install && chmod 777 beyond.sh && screen ./beyond.sh
+chmod 777 autobd.sh
+screen ./autobd.sh
 ```
 
-* * *
 
 
 
