@@ -1093,12 +1093,12 @@ matches[3] then
 		local send_file = 
 "./"..matches[2].."/"..matches[3]
 		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 
-1, nil, send_file, '@fire021tm', dl_cb, nil)
+1, nil, send_file, '@Samyar7688', dl_cb, nil)
 	end
 	if matches[1]:lower() == "sendplug" and matches[2] then
 	    local plug = "./plugins/"..matches[2]..".lua"
 		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 
-1, nil, plug, '@fire021tm', dl_cb, nil)
+1, nil, plug, '@Samyar7688', dl_cb, nil)
     end
   end
 
@@ -1289,9 +1289,9 @@ text = [[
 🔱دعوت شدن شما توسط ربات به گروه مورد نظر🔱
 
 *.-.-.-.-.-.-.-.-.-.-.-.-.-.*
-🔰*کانال تيم ربات*:@fire021tm
+🔰*کانال تيم ربات*:@Samyar7688
 
-🔰طراحي شده توسط :@aliaz003
+🔰طراحي شده توسط :@Samyar35
 ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
@@ -1345,4 +1345,4 @@ patterns = {
 }, 
 run = run, pre_process = pre_process
 }
--- #End By @fire021tm
+-- #End By @Samyar7688
